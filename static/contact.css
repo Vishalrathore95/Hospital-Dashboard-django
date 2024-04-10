@@ -1,0 +1,83 @@
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Body styles */
+body {
+  background-color: #f0f4f5;
+
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 5%; /* Use percentages for responsiveness */
+}
+
+.logo img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.utility {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+
+.utility li a {
+  text-decoration: none;
+  color: #000; /* Use hex code for colors */
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Main section styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.appointmentBox {
+  width: 80%;
+  max-width: 500px; /* Adjust max-width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.heading {
+  text-align: center;
+}
+label {
+  font-weight: bold;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}

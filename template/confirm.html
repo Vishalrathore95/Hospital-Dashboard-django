@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+           
+            padding: 10px 20px;
+          
+        }
+
+        .logo img {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .utility {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+            margin-right: 20px;
+        }
+
+        .utility li {
+            display: inline-block;
+        }
+
+        .utility li a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 15px; /* Adjust padding for spacing around each link */
+        }
+
+        .appointmentDetails {
+            max-width: 80%;
+            margin: 80px auto; /* Increased margin for header space */
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo"><img src="/static/logo.png" alt="Logo" /></div>
+  
+        <ul class="utility">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Appointment</a> </li>
+            <li><a href="/doccard">our Doctor</a> </li>
+            <li><a href="/confirm">view Appointment Detail</a> </li>
+            <li><a href="{% url 'logout'%}" class="btn4">Logout</a></li>
+
+         
+        </ul>
+      </header>
+
+    <div class="appointmentDetails">
+        <h1>Appointment Details</h1>
+        <table id="appointmentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Doctor</th>
+                    <th>Date and Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for appointment in appoinmentdata %}
+                <tr>
+                    <td>{{ appointment.name }}</td>
+                    <td>{{ appointment.email }}</td>
+                    <td>{{ appointment.phone_number }}</td>
+                    <td>{{ appointment.doctor }}</td>
+                    <td>{{ appointment.date_and_time }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

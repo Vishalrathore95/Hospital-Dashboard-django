@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(240, 244, 245);
+  overflow: hidden;
+}
+
+/* Here HEader Section Start */
+/* Here HEader Section Start */
+/* Here HEader Section Start */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 130px;
+}
+.logo img {
+  width: 150px;
+  cursor: pointer;
+}
+.utility {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+.utility li a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* Main Section section or Hero Section Start */
+/* Main Section section or Hero Section Start */
+/* Main Section section or Hero Section Start */
+/* Main Section section or Hero Section Start */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 152px;
+    gap: 17px;
+}
+.heading{
+    font-size: 33px;
+    color: #20BC7E;
+    font-weight: 800;    
+}
+.subHeading{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Here Cards Section or  Feature Section */
+.box {
+    display: flex;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+.cards {
+  width: 190px;
+  height: 95px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards h1{
+    color: #20BC7E;
+}
+.cards p{
+    font-size: 16px;
+}

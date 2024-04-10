@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the Page -->
+    <title>{{title}}</title>
+
+    <!-- Link CSS Style Sheet -->
+    <link rel="stylesheet" href="/static/signup.css" />
+  </head>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <!-- Here Header Start -->
+    <header>
+      <!-- Logo -->
+      <div class="logo"><img src="/static/logo.png" alt="Logo" /></div>
+
+      <ul class="utility">
+        <li><a href="/login">Login</a> </li>
+        <li><a href="/singup">singup</a> </li>
+        <li><a href="/doctor">Doctor login</a> </li>
+ 
+        <li><a href="{% url 'logout'%}" class="btn4">Logout</a></li>
+
+       
+      </ul>
+    </header>
+    <div class="container">
+        <form id="signupForm"   method="POST">
+            {% csrf_token %}
+            <h2>Sign Up</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="success-message"></p>
+        <p id="error-message"></p>
+        <div class="additional-links">
+            <a href="/login ">Already have an account? Login</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

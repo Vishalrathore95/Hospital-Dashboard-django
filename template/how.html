@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    {% for n in clist%}
+    <div>  {{ forloop.counter }} {{n}} </div>
+    {% endfor %}
+
+
+    <table border="1px" cellpaddind="10">
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+        </tr>
+        {% for d in student %}
+        <tr>
+            <td>{{ d.name }}</td>
+            <td>{{ d.phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    {% if number|length > 0 %}
+    {% for n in number %}
+        {% if n > 20 %}
+            <div>{{ n }}</div>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <div>No Number</div>
+{% endif %}
+
+</body>
+</html>

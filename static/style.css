@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(240, 244, 245);
+}
+
+/* Here HEader Section Start */
+/* Here HEader Section Start */
+/* Here HEader Section Start */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 130px;
+}
+.logo img {
+  width: 150px;
+  cursor: pointer;
+}
+.utility {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+.utility li a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Stethoscope Image */
+.bgc{
+  width: 526px;
+  position: absolute;
+  left: 335px;
+  top: 87px;
+  z-index: 1;
+}
+/* Here Hero Section or Main Section Start */
+/* Here Hero Section or Main Section Start *
+  /* Here Hero Section or Main Section Start *
+  /* Here Hero Section or Main Section Start */
+.heroSection {
+  display: flex;
+}
+.leftHero {
+  width: 60%;
+  margin-top: 50px;
+  margin-left: 130px;
+}
+.heading {
+  font-size: 65px;
+  font-weight: 900;
+}
+.subHeading {
+  color: #7c7c7c;
+  font-size: 18px;
+  margin: 20px 0;
+}
+.bigBtn {
+ 
+  border: none;
+  padding: 15px 40px;
+  border-radius: 40px;
+  background-color: #20bc7e;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.bigBtn a{
+  text-decoration: none;
+  color: white;
+}
+.bottomAngle {
+  position: relative;
+  left: 300px;
+  top: -45px;
+}
+.mouseImage {
+  position: relative;
+  left: 300px;
+  top: 10px;
+}
+.greenBox img {
+  width: 479px;
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  z-index: 1;
+}
+.yellowBox img {
+  width: 425px;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  z-index: 1;
+}
+.drImage img {
+  width: 408px;
+  position: absolute;
+  top: 63px;
+  right: 0px;
+  z-index: 1;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the Page -->
+    <title>{{title}}</title>
+
+    <!-- Link CSS Style Sheet -->
+    <link rel="stylesheet" href="/static/new.css" />
+   
+  </head>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/contact.css">
+  <body>
+    <!-- Here Header Start -->
+    <header>
+      <!-- Logo -->
+      <div class="logo"><img src="/static/logo.png" alt="Logo" /></div>
+
+      <ul class="utility">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Appointment</a> </li>
+        <li><a href="/doccard">our Doctor</a> </li>
+        <li><a href="/confirm">view Appointment Detail</a> </li>
+        <li><a href="{% url 'logout'%}" class="btn4">Logout</a></li>
+      
+       
+      </ul>
+    </header>
+    <main>
+        <!-- Appointment Box -->
+        <div class="appointmentBox">
+          <form method="post" action="{% url 'savedata' %}">
+
+              {%  csrf_token %}
+                <!-- Form Heading -->
+                <h1 class="heading">Appointment Request Form</h1>
+
+                <!-- Take Name Input -->
+                <label>Name</label><br />
+                <input type="text" name="name" placeholder="Enter your name" required /><br />
+
+                <!-- Take Email Input -->
+                <label>Email</label><br />
+                <input type="email"   name="email" placeholder="Enter your email" required /><br />
+
+                <!-- Take Phone Number Input -->
+                <label>Phone Number</label><br />
+                <input type="tel" name="phone" placeholder="Enter your phone number" required /><br />
+
+                <!-- Select Doctor -->
+                <label>Select Doctor</label><br />
+                <select name="doctor">
+                  <option value="dr-smith">Dr. Smith</option>
+                  <option value="dr-jones">Dr. Jones</option>
+                  <option value="dr-wilson">Dr. Wilson</option>
+                  <option value="dr-miller">Dr. Miller</option>
+                  <option value="dr-anderson">Dr. Anderson</option>
+                  <option value="dr-brown">Dr. Brown</option>
+                  <option value="dr-davis">Dr. Davis</option>
+                  <option value="dr-evans">Dr. Evans</option>
+                  <option value="dr-garcia">Dr. Garcia</option>
+                  <option value="dr-hall">Dr. Hall</option>
+                  <option value="dr-jackson">Dr. Jackson</option>
+                  <option value="dr-kelly">Dr. Kelly</option>
+                  <option value="dr-lee">Dr. Lee</option>
+                  <option value="dr-martin">Dr. Martin</option>
+                  <option value="dr-nelson">Dr. Nelson</option>
+                  <option value="dr-owens">Dr. Owens</option>
+                  <option value="dr-patel">Dr. Patel</option>
+                  <option value="dr-ross">Dr. Ross</option>
+                  <option value="dr-taylor">Dr. Taylor</option>
+                  <option value="dr-white">Dr. White</option>
+                  <!-- Add more doctor options as needed -->
+                </select><br />
+                
+
+                <!-- Date and Time Input -->
+                <label>Date and Time</label><br />
+                <input type="datetime-local" name="date" required /><br />
+
+                <!-- Submit Button -->
+                <button class="btn">Request Appointment</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

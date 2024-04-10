@@ -1,0 +1,28 @@
+{% include "header.html" %}
+
+
+      <!-- Here Hero Section or Main Section Start -->
+      <main>
+
+        <!-- Main Heading -->
+        <h1 class="heading">Best and Experienced Faculties</h1>
+
+            <!-- Sub Heading -->
+        <p class="subHeading">We had bring the best experts of medical field to provide you the best <br>service as possible. We are trying our best to serve the world with our<br> facilities, so that everyone can have a proper medical facility to avail.</p>
+
+        <section class="box">
+            <!-- First Box -->
+            {% for stat in stats %}
+            <div class="cards">
+                <h1>{{ stat.count }}</h1>
+                <p>{{ stat.category }}</p>
+            </div>
+        {% endfor %}
+        
+
+            <!-- Third Box -->
+           
+        </section>
+      </main>
+</body>
+</html>
