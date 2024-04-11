@@ -51,7 +51,7 @@ jango/assets/138272471/7636f42a-b967-4082-b46f-933b07f6bb81)
 ![Screenshot 2024-04-11 131700](https://github.com/Vishalrathore95/Hospital-Dashboard-django/assets/138272471/877acbe7-3f41-4489-bd98-5ec304f560e6)
 ![Screenshot 2024-04-11 131722](https://github.com/Vishalrathore95/Hospital-Dashboard-django/assets/138272471/3a4ac41e-b92b-4c3d-8f08-fe3aa52d6ccc)
 
-The code for this project is available on GitHub at [GitHub - YourRepositoryName](https://github.com/YourRepositoryName).
+The code for this project is available on GitHub at [[GitHub - YourRepositoryName](https://github.com/YourRepositoryName](https://github.com/Vishalrathore95/Hospital-Dashboard-django)).
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or create a pull request.
